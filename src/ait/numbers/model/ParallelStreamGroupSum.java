@@ -12,7 +12,7 @@ public class ParallelStreamGroupSum extends GroupSum {
         // TODO Homework advanced: compute the sum of all numbers in each group using parallel streams
         return Arrays.stream(numberGroup)
                 .parallel()
-                .flatMapToInt(Arrays::stream)
+                .mapToInt(arr -> Arrays.stream(arr).sum())
                 .sum();
     }
 }
