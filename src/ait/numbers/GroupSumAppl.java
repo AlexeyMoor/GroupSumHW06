@@ -15,7 +15,7 @@ public class GroupSumAppl {
     private static final Random random = new Random();
 
 
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         fillArray();
         GroupSum threadGroupSum = new ThreadGroupSum(NUMBERS);
         GroupSum executorGroupSum = new ExecutorGroupSum(NUMBERS);
