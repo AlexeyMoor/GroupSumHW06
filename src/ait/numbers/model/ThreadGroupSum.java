@@ -20,7 +20,7 @@ public class ThreadGroupSum extends GroupSum {
         }
 
         for (int i = 0; i < numberGroup.length; i++) {
-            threads[i].join();
+            threads[i].join(); // wait for thread to finish
         }
 
         int totalSum = 0;

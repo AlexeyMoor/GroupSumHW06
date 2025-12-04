@@ -23,7 +23,7 @@ public class ExecutorGroupSum extends GroupSum {
         }
 
         for (OneGroupSum task : tasks) {
-            executor.execute(task);
+            executor.execute(task); // передача задачи в пул потоков
         }
 
         executor.shutdown();
